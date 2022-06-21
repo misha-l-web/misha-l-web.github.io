@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+}
+.travel{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background:white;
+    padding-top: 2px;
+   
+    
+}
+    
+.title{
+    font-family: 'tahoma';
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+      
+}
+.one{ 
+background-attachment: fixed;}
+.two{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+}
+*,
+*:after,
+*:before,{
+    box-sizing: border-box;
+    
+}
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(img/priroda.jpg) center no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.text {
+    font-family: 'Lora', serif;    
+    text-align:justify;
+    width: 80%;
+    margin: auto;
+    background: white;
+    font-size: 21px;
+    line-height: 1.5;
+    text-indent: 20px;
+    
+}
+.text1{
+    font-family: 'Lora', serif;    
+    text-align:justify;
+    width: 80%;
+    margin: auto; 
+    font-size: 30px;
+    
+}
+.kolizej{
+    background: url(img/Kolizej.jpg) center no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.stina{
+    background: url(img/sim.jpg) center no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.india{
+    background: url(img/%D1%82%D0%B0%D0%B4%D0%B6%D0%BC%D0%B0%D1%85%D0%B0%D0%BB.jpg) center no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.statyja{
+    background: url(img/Statue-of-Jesus-Christ-The-Redeemer-Rio-de-Janeiro-Brazil.jpg) center no-repeat;
+    width: 100%;
+    height: 700px;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.misto{
+    background: url(img/4788c7100659e4b9f122c6d1cf40bb0b.jpg) center no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.peru{
+    background: url(img/regnum_picture_15575841381314867_normal.jpg) center no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.seven{
+    background: url(img/a0a976a6e169e015ffd0520ae745f91e.jpg) no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size:cover;
+    background-attachment: fixed;   
+}
+.nav{
+    margin-right: 100px;
+    font-family: 'tahoma' serif;
+    font-size: 20px;
+    text-transform: uppercase;  
+}
+.nav_link{
+ 
+   display: inline-block;
+    vertical-align: top;
+    position:relative;
+    margin: 14px;
+    color: #413c3c;
+    text-decoration: none;
+    transition: color 0.2s linear;
+  
+}
+.nav_link:hover{
+    color:red;
+}
+.nav_link:after{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+   
+}
+.nav_link:hover:after{
+    display: block;
+}
+nav ul{
+    list-style: none;
+    background-color: white;
+    padding: 0;
+}
+nav>ul>li{
+    float:left;
+}
+nav ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none; 
+   
+}
+nav ul ul{
+   display: none;
+    position: absolute; 
+    
+}
+nav ul li:hover ul{
+    display: block;
+}
+ 
+.end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background: #4b4a4a;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+.back_to_top{
+    position: fixed;
+    right: 30px;
+    bottom: 80px;
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+    border-radius: 50%;
+    background-color: #5f605e; 
+    display: none;
+}
+.back_to_top:hover,
+.back_to_top:focus{
+    filter: brightness(1.5);
+    outline: none;
+}
+.back_to_top::before,
+.back_to_top::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.back_to_top::before{
+    width: 5px;
+    height: 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: white;
+}
+   
+.back_to_top::after{
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    
+}
