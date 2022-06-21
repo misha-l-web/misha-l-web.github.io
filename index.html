@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     </head>
     <body>
-       
+       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <div class="one">
         <div class="travel"><img src="img/travel-dog-mip.png" width="230px" height="75px" >
              <nav class="nav">
@@ -104,25 +104,5 @@
         </div>
         <div class="end">"2020-2021, Travel Dog"</div>
      
-     <script>
-      function backtotop(){
-  let button=$('.back_to_top');
-    
-  $(window).on('scroll',()=>{
-      if ($(this).scrollTop()>=500){
-          button.fadeIn();
-      }else{
-          button.fadeOut();
-          
-      }
-  });
-    button.on('click', (e)=>{
-        e.preventDefault();
-        $('html').animate({scrollTop: 0}, 1000);
-        
-    })
-}
-backtotop();
-     </script>
     </body>
 </html>
